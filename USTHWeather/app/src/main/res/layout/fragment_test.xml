@@ -7,18 +7,18 @@
     android:orientation="vertical"
     tools:context=".TestFragment"  >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="104dp"
-        android:gravity="center"
-        android:text="Thursday"
-        android:textColor="@color/black"
-        android:textSize="34sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="104dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Thursday"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="34sp" />-->
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="171dp"
-        android:src="@drawable/cloud" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="171dp"-->
+<!--        android:src="@drawable/cloud" />-->
 </LinearLayout>
