@@ -21,6 +21,7 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
         getSupportFragmentManager().beginTransaction().add(R.id.forecast_container,new ForecastFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.weather_fragment,new WeatherFragment()).commit();
     }
 
     @Override
