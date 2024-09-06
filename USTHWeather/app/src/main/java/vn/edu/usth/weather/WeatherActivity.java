@@ -13,20 +13,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class WeatherActivity extends AppCompatActivity {
-    Button gogo;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Intent intent = new Intent(this,SecondActivity.class);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
-        gogo = findViewById(R.id.gogo);
-        gogo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(intent);
-            }
-        });
+        getSupportFragmentManager().beginTransaction().add(R.id.forecast_container,new ForecastFragment()).commit();
     }
 
     @Override

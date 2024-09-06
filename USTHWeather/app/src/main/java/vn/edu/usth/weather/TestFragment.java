@@ -30,7 +30,7 @@ public class TestFragment extends Fragment {
         TextView textView = new TextView(getContext());
         layao.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT));
+                LinearLayout.LayoutParams.MATCH_PARENT));
 
         textView.setGravity(Gravity.CENTER);
         textView.setText("Thursday");
