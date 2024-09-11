@@ -28,9 +28,11 @@ public class WeatherActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tabLayout);
         viewPager2 = findViewById(R.id.viewPager2);
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
+        //add 3 same fragments. will modify later
         viewPagerAdapter.addFragment(new WeatherAndForecastFragment(),"Paris");
-        viewPagerAdapter.addFragment(new WeatherAndForecastFragment(),"Ha Noi");
+        viewPagerAdapter.addFragment(new WeatherAndForecastFragment(),"HaNoi");
         viewPagerAdapter.addFragment(new WeatherAndForecastFragment(),"London");
+        //header sync with tabLayout
         viewPager2.setAdapter(viewPagerAdapter);
         new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> {
             tab.setText(viewPagerAdapter.getTitle(position));
