@@ -11,17 +11,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager2.widget.ViewPager2;
+
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class WeatherActivity extends AppCompatActivity {
-
+    private TabLayout tabLayout;
+    private ViewPager2 viewPager2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
-        getSupportFragmentManager().beginTransaction().add(R.id.forecast_container,new ForecastFragment()).commit();
-        getSupportFragmentManager().beginTransaction().replace(R.id.weather_fragment,new WeatherFragment()).commit();
+        tabLayout = findViewById(R.id.tabLayout);
+        viewPager2 = findViewById(R.id.viewPager2);
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
+        viewPagerAdapter.addFragment(new WeatherAndForecastFragment(),"Paris");
+        viewPagerAdapter.addFragment(new WeatherAndForecastFragment(),"Ha Noi");
+        viewPagerAdapter.addFragment(new WeatherAndForecastFragment(),"London");
+        viewPager2.setAdapter(viewPagerAdapter);
+        new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> {
+            tab.setText(viewPagerAdapter.getTitle(position));
+        }).attach();
     }
 
     @Override
