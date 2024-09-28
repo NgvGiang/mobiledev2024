@@ -84,7 +84,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/cloud" />
+                android:src="@drawable/thunderstorm" />
         </LinearLayout>
 
         <LinearLayout
@@ -98,7 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="@string/MostlyCloudy" />
+                android:text="@string/Thunderstorm" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -135,7 +135,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/cloud" />
+                android:src="@drawable/rainy" />
         </LinearLayout>
 
         <LinearLayout
@@ -149,7 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="@string/MostlyCloudy" />
+                android:text="@string/Rain" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -186,7 +186,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/cloud" />
+                android:src="@drawable/partly_cloudy_day" />
         </LinearLayout>
 
         <LinearLayout
@@ -200,7 +200,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="@string/MostlyCloudy" />
+                android:text="@string/PartlyCloud" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -237,7 +237,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/cloud" />
+                android:src="@drawable/rainy" />
         </LinearLayout>
 
         <LinearLayout
@@ -251,7 +251,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="@string/MostlyCloudy" />
+                android:text="@string/ScatteredShowers" />
 
             <TextView
                 android:id="@+id/textView21"

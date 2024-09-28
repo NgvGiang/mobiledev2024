@@ -11,7 +11,8 @@
         android:id="@+id/weather_fragment"
         android:name="vn.edu.usth.weather.WeatherFragment"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp" />
@@ -19,8 +20,8 @@
     <FrameLayout
         android:id="@+id/forecast_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
         android:layout_margin="15dp">
 
     </FrameLayout>

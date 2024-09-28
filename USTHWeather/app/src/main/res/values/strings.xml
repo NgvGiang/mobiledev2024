@@ -18,4 +18,6 @@
     <string name="MostlyCloudy">Mostly Cloudy</string>
 
     <string name="Temp">24C-27C</string>
+    <string name="hanoi">HaNoi</string>
+    <string name="berlin">Berlin</string>
 </resources>

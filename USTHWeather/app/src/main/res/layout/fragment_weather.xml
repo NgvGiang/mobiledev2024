@@ -36,6 +36,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:text="HaNoi" />
+        android:text="@string/hanoi" />
 
 </RelativeLayout>
