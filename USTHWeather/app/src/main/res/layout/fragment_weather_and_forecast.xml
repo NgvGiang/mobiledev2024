@@ -7,7 +7,7 @@
     tools:context=".WeatherAndForecastFragment">
 
 
-    <fragment
+    <FrameLayout
         android:id="@+id/weather_fragment"
         android:name="vn.edu.usth.weather.WeatherFragment"
         android:layout_width="match_parent"
